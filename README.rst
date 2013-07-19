@@ -13,6 +13,9 @@ the ability to work with other kinds of networks too.
 Home page: https://launchpad.net/ibid/
 Latest doc: http://ibid.omnia.za.net/docs/trunk/index.html
 
+However, we're using our own fork of Ibid, which you can find at
+https://github.com/caktus/ibid/.
+
 Server prep
 -----------
 
@@ -102,6 +105,18 @@ it from your local system::
     fab [envname] stop
     fab [envname] start
     fab [envname] restart
+
+Developing
+----------
+
+You can use the fabfile with `envname` of ``local`` or ``vagrant``
+to test. You'll probably want to point your test deploy of Ibid at
+another IRC server, or at least use a different nick than we do
+in production.
+
+You could probably also install ``requirements/server.txt``, run
+``ibid-setup``, and thus run from your working directory, but I haven't
+tried it.  I always ``fab local deploy``.
 
 Sources
 -------
