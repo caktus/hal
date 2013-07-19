@@ -23,8 +23,8 @@ from fabric.utils import abort, error
 
 
 
-# This repo
-env.repo = "git@github.com:caktus/hal"
+# This repo - public URL
+env.repo = "https://github.com/caktus/hal.git"
 
 # Put your production server settings into servers.py.
 # Copy servers.py-example to servers.py and edit.

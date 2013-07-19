@@ -122,14 +122,14 @@ An ``identity`` is a userid on a source.  E.g. IRC nick ``dpoirier``
 on IRC server caktus is one identity, while IRC nick ``dpoirier`` on
 IRC server freenode would be a different identity.
 
-An ``account`` is an attempt to represent a particular person. Both
-dpoirier on caktus IRC and dpoirier on freenode might be associated with
+An ``account`` represents a particular person. Both dpoirier on
+caktus IRC and dpoirier on freenode might be associated with
 the same account (but they don't have to be).
 
 Use ``create account [<name>]`` to create a new account.
 
 Associate an account with an identity using
-``link user <username> to <identity> on <source>``
+``link user <accountname> to <identity> on <source>``
 
 ``Credentials`` are ways that an identity can prove that they
 are entitled to access as a particular account. For example, an account
