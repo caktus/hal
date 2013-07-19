@@ -1,0 +1,39 @@
+# Required on the server
+
+git+http://github.com/caktus/ibid.git@master#egg=ibid
+
+##
+## CORE prerequisites
+##
+Twisted==12.2.0
+SQLAlchemy==0.7.9
+configobj==4.7.2
+python-dateutil==2.1
+SOAPpy==0.12.5
+
+# For XMPP (jabber)
+wokkel==0.7.0
+
+# required by core plugins:
+html5lib==0.95
+BeautifulSoup==3.2.1
+
+# web plugins
+Jinja2==2.6
+
+# dictclient not on PyPI
+https://github.com/jgoerzen/dictclient/archive/master.zip
+chardet
+
+# other?  some of these probably just dependencies of ones above
+PyStemmer==1.2.0
+distribute==0.6.28
+dnspython==1.10.0
+feedparser==5.1.2
+fpconst==0.7.2
+html2text==3.200.3
+pyOpenSSL==0.13
+six==1.2.0
+wsgiref==0.1.2
+wstools==0.4
+zope.interface==4.0.1

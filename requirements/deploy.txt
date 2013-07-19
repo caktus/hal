@@ -1,0 +1,5 @@
+# for deploying
+Fabric==1.6.1
+
+# we use Jinja for some templates in Fabric
+Jinja2==2.6

@@ -1,0 +1,11 @@
+# Copy servers.py-example to servers.py and edit.
+# Do not check servers.py into git.
+
+production_settings = {
+    # The Ibid server hostname
+    'hosts': ['myserver.domainname'],
+    # The nick that Ibid uses on IRC
+    'botname': 'hal',
+    # The user that Ibid runs as on that server
+    'project_user': 'hal',
+}

@@ -1,0 +1,28 @@
+# local.ini-example is an example local.ini - copy to `local.ini` and edit.
+
+# local.ini will be copied to the server if there's not one there already,
+# but will not be automatically updated there.
+
+# You can use Jinja-style {{ varname }} references to values from fabric's
+# ``env`` and they'll be interpolated when this file is copied up to the
+# server; just keep in mind that'll only happen once unless you manually
+# delete the local.ini file from the server and deploy again.
+
+# local.ini settings will be merged into ibid.ini settings internally
+# when Ibid runs.
+
+# You can put any settings in here that you want. We're using it for
+# sources, like our IRC server.
+
+# Replace <name> with actual values.
+
+[sources]
+    [[caktus]]
+        auth = hostmask, nickserv
+        server = <serverhostname>
+        channels = "#{{ botname }}", "<#channel1>", "<#channel2>"
+        nick = {{ botname }}
+        type = irc
+        port = 9999
+        ssl = True
+        password = <serverpassword>

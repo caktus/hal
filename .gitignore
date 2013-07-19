@@ -1,0 +1,6 @@
+logs
+irclogs
+twistd.pid
+*.pyc
+local.ini
+servers.py

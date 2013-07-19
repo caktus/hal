@@ -1,0 +1,10 @@
+; supervisor config file
+
+[program:ibid]
+directory=%(workdir)s
+command=%(venv)s/bin/twistd --nodaemon --pidfile %(root)s/ibid.pid --logfile %(root)s/ibid-logs/twistd.log ibid
+user=%(project_user)s
+# twistd wants INT signal for clean shutdown
+stopsignal=INT
+stdout_logfile=%(root)s/ibid-logs/supervisor_stdout.log
+stderr_logfile=%(root)s/ibid-logs/supervisor_stderr.log
